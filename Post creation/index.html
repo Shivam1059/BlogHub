@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- navber section -->
+     <header>
+      <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="#">BlogHub</a>
+        </div>
+    
+        <!-- List Items Section -->
+        <ul class="nav-links">
+          <li><a href="../homepage/index.html">Home</a></li>
+          <li><a href="../blog/index.html">Blogs</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Create Post">Post</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    
+        <!-- Login Section -->
+        <div class="login">
+          <a href="#login">Login</a>
+        </div>
+      </nav>
+    </header>
+  <main>
+  
+
+    <!-- Post Creation Section -->
+    <section id="createPost" class="section">
+
+        <div class="form-container">
+          <div class="hero-heading">
+            <h2>Create New Post</h2>
+        </div>
+
+              <!-- image Uplode section -->
+         <div class="container-p">
+          <!-- <h2>Upload an Image</h2> -->
+          <input type="file" id="imageInput" accept="image/*">
+          <img id="preview" alt="Uploaded Image Preview">
+       </div>
+
+            <form id="createPostForm">
+                <input type="text" id="postTitle" placeholder=" Blog title" required />
+                <textarea id="postContent" placeholder="Start writing  here..." required></textarea>
+            </form>
+
+          <button type="submit">Publish</button>
+
+        </div>
+    </section>
+
+    <!-- Post Management Section -->
+    <!-- <section id="home" class="section">
+        <div class="post-management">
+            <h2>Manage Posts</h2>
+            <div id="postsContainer"> -->
+                <!-- Dynamically loaded posts will appear here -->
+            <!-- </div>
+        </div>
+    </section> -->
+         <!-- Search Section -->
+         <!-- <section id="search" class="section">
+          <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Search posts..." />
+              <button onclick="searchPost()">Search</button>
+          </div>
+          <div id="searchResults"></div>
+      </section> -->
+    
+  </main>
+
+<!-- Js file for post uplode section -->
+  <script>
+    document.getElementById('imageInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.getElementById('preview');
+                img.src = e.target.result;
+                img.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+</body>
+</html>

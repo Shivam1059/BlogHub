@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Management</title>
+    <link rel="stylesheet" href="blogmangment.css">
+    
+</head>
+<body>
+ 
+   <!-- navber section -->
+   <header>
+    <nav class="navbar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <a href="#">BlogHub</a>
+      </div>
+      <!-- search bar -->
+      <!-- <section id="search" class="section"> -->
+        <div class="search-container-1">
+            <input type="text" id="searchInput" placeholder="Search posts..." />
+            <button onclick="searchPost()" class = " search-btn-1">Search</button>
+        </div>
+        <div id="searchResults"></div>
+    <!-- </section> -->
+
+  
+      <!-- List Items Section -->
+      <ul class="nav-links">
+        <li><a href="../homepage/index.html">Home</a></li>
+        <li><a href="../blog/index.html">Blogs</a></li>
+        <li><a href="../Post creation/index.html">Post</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="../Contect Page/index.html">Contact</a></li>
+      </ul>
+  
+      <!-- Login Section -->
+      <div class="login">
+        <a href="#login">Login</a>
+      </div>
+    </nav>
+  </header>
+
+
+       <!-- Search Section -->
+       <!-- <section id="search" class="section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search posts..." />
+            <button onclick="searchPost()" class = " search-btn">Search</button>
+        </div>
+        <div id="searchResults"></div>
+    </section> -->
+
+
+        <!-- main section -->
+         
+<div class="container">
+    <div class="hero-heading">
+        <h2>Blog  Mangment</h2>
+    </div>
+   
+    
+       <!-- Search Section -->
+       <section id="search" class="section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search posts..." />
+            <button onclick="searchPost()" class = " search-btn">Search</button>
+        </div>
+        <div id="searchResults"></div>
+    </section>
+
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error cumque mollitia delectus, repellat quidem provident iure pariatur possimus facere.</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button id="shareBtn">Share</button>
+               
+
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odio consectetur numquam maxime reprehenderit quidem, ullam excepturi laborum iure possimus. Vitae harum ea officia. Necessitatibus!</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum consectetur enim perspiciatis aliquid commodi corrupti molestias, numquam tempore accusamus sunt deleniti ea iusto fugit!.</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, dolore soluta nesciunt ipsam quo rerum aliquid totam odio dolorem nam adipisci nihil deleniti maxime.</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, dolore soluta nesciunt ipsam quo rerum aliquid totam odio dolorem nam adipisci nihil deleniti maxime</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">This is a sample blog post.</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">This is a sample blog post.</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts-container">
+        <div class="post" id="post1">
+            <p class="post-content">This is a sample blog post.</p>
+            <div class="buttons">
+                <button onclick="editPost('post1')">Edit</button>
+                <button onclick="copyPost('post1')">Copy</button>
+                <button onclick="deletePost('post1')">Delete</button>
+                <button onclick="sharePost('post1')">Share</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script>
+        function editPost(postId) {
+            let post = document.getElementById(postId).querySelector('.post-content');
+            let newText = prompt("Edit your post:", post.innerText);
+            if (newText !== null) post.innerText = newText;
+        }
+
+        function copyPost(postId) {
+            let postText = document.getElementById(postId).querySelector('.post-content').innerText;
+            navigator.clipboard.writeText(postText).then(() => alert("Copied to clipboard!"));
+        }
+
+        function deletePost(postId) {
+            let post = document.getElementById(postId);
+            if (confirm("Are you sure you want to delete this post?")) {
+                post.remove();
+            }
+        }
+
+        function sharePost(postId) {
+            let postText = document.getElementById(postId).querySelector('.post-content').innerText;
+            alert("Share this post: " + postText);
+        }
+
+
+     document.getElementById("shareBtn").addEventListener("click", function() {
+       // Get the current page URL
+       const shareUrl = window.location.href;
+        //Copy to clipboard
+      navigator.clipboard.writeText(shareUrl).then(() => {
+          document.getElementById("message").textContent = "🔗 Link copied to clipboard!";
+        }).catch(err => {
+       console.error("Failed to copy:", err);
+      }); 
+    });
+    </script>
+</body>
+</html>
